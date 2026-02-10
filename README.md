@@ -64,6 +64,19 @@ This project is built with:
 
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
+## Deploy no GitHub Pages
+
+Este repositorio ja esta configurado para deploy automatico no GitHub Pages usando GitHub Actions.
+
+1. Faca push para a branch `main`.
+2. No GitHub, va em `Settings > Pages`.
+3. Em `Build and deployment`, selecione `Source: GitHub Actions`.
+4. Aguarde o workflow `Deploy to GitHub Pages` finalizar.
+
+URL esperada:
+
+`https://<seu-usuario-ou-org>.github.io/ls-negretto-strategy-growth/`
+
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!
