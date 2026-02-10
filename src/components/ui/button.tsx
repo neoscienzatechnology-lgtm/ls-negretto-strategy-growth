@@ -18,7 +18,7 @@ const buttonVariants = cva(
         gold: "bg-gold text-charcoal hover:bg-gold-light font-semibold tracking-wide shadow-lg hover:shadow-xl",
         "gold-outline": "border-2 border-gold text-gold hover:bg-gold hover:text-charcoal font-semibold tracking-wide",
         "hero-primary": "bg-gold text-charcoal hover:bg-gold-light font-semibold tracking-wide text-base shadow-lg hover:shadow-xl hover:-translate-y-0.5",
-        "hero-secondary": "border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-medium tracking-wide text-base",
+        "hero-secondary": "border-2 border-foreground/30 text-foreground hover:bg-foreground/10 font-medium tracking-wide text-base",
       },
       size: {
         default: "h-10 px-4 py-2",

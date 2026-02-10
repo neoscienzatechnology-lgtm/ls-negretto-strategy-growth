@@ -28,11 +28,11 @@ const SolutionsSection = () => {
           className="text-center mb-16"
         >
           <div className="gold-line mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-primary-foreground leading-tight mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-foreground leading-tight mb-4">
             Soluções que geram{" "}
             <span className="text-gradient-gold italic">resultados reais</span>
           </h2>
-          <p className="text-primary-foreground/60 font-body text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/50 font-body text-lg max-w-2xl mx-auto">
             Método, clareza e sustentabilidade para cada etapa do crescimento do seu negócio.
           </p>
         </motion.div>
@@ -45,11 +45,11 @@ const SolutionsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.07, duration: 0.5 }}
-              className="group p-6 rounded-xl border border-primary-foreground/10 hover:border-gold/30 bg-primary-foreground/5 hover:bg-primary-foreground/8 transition-all duration-300"
+              className="group p-6 rounded-xl border border-foreground/10 hover:border-gold/30 bg-foreground/5 hover:bg-foreground/8 transition-all duration-300"
             >
               <item.icon className="w-8 h-8 text-gold mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-lg font-heading text-primary-foreground mb-2">{item.title}</h3>
-              <p className="text-primary-foreground/50 font-body text-sm leading-relaxed">{item.desc}</p>
+              <h3 className="text-lg font-heading text-foreground mb-2">{item.title}</h3>
+              <p className="text-foreground/45 font-body text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </div>

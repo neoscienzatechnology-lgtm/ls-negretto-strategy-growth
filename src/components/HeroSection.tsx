@@ -18,7 +18,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center bg-gradient-dark overflow-hidden">
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(38 65% 55%) 1px, transparent 0)",
+        backgroundImage: "radial-gradient(circle at 1px 1px, hsl(43 72% 52%) 1px, transparent 0)",
         backgroundSize: "40px 40px"
       }} />
 
@@ -44,7 +44,7 @@ const HeroSection = () => {
               animate="visible"
               variants={fadeUp}
               custom={1}
-              className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground leading-tight mb-6"
+              className="text-4xl md:text-5xl lg:text-6xl font-heading text-foreground leading-tight mb-6"
             >
               Estratégia, gestão e pessoas para marcas que querem{" "}
               <span className="text-gradient-gold italic">crescer com solidez.</span>
@@ -55,7 +55,7 @@ const HeroSection = () => {
               animate="visible"
               variants={fadeUp}
               custom={2}
-              className="text-primary-foreground/70 text-lg md:text-xl font-body leading-relaxed mb-8 max-w-xl"
+              className="text-foreground/60 text-lg md:text-xl font-body leading-relaxed mb-8 max-w-xl"
             >
               Consultoria estratégica para empresários, franqueadoras e líderes que buscam crescimento sustentável, estruturado e lucrativo.
             </motion.p>
@@ -70,11 +70,11 @@ const HeroSection = () => {
             >
               <div>
                 <span className="text-3xl md:text-4xl font-heading text-gold font-bold">+7.000</span>
-                <p className="text-primary-foreground/50 text-sm font-body mt-1">horas de consultoria</p>
+                <p className="text-foreground/40 text-sm font-body mt-1">horas de consultoria</p>
               </div>
               <div>
                 <span className="text-3xl md:text-4xl font-heading text-gold font-bold">+400</span>
-                <p className="text-primary-foreground/50 text-sm font-body mt-1">empresas impactadas</p>
+                <p className="text-foreground/40 text-sm font-body mt-1">empresas impactadas</p>
               </div>
             </motion.div>
 
