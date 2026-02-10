@@ -28,14 +28,14 @@ const EllasMentorySection = () => {
             <img src={ellasLogo} alt="Ellas Business" className="h-12 mb-6 brightness-0 invert opacity-80" />
             <div className="gold-line mb-6" />
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-primary-foreground leading-tight mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-foreground leading-tight mb-4">
               Ellas <span className="text-gradient-gold italic">Mentory</span>
             </h2>
             <p className="text-xl font-heading italic text-gold/80 mb-6">
               Psicodinâmica que Vende e Sustenta Resultados
             </p>
 
-            <p className="text-primary-foreground/60 font-body text-base leading-relaxed mb-8">
+            <p className="text-foreground/50 font-body text-base leading-relaxed mb-8">
               O método que integra mente, estratégia e performance para empresárias reais que desejam dominar suas decisões e multiplicar seus resultados.
             </p>
 
@@ -50,7 +50,7 @@ const EllasMentorySection = () => {
                   className="flex items-center gap-3"
                 >
                   <item.icon className="w-5 h-5 text-gold shrink-0" />
-                  <span className="text-primary-foreground/70 font-body">{item.text}</span>
+                  <span className="text-foreground/65 font-body">{item.text}</span>
                 </motion.div>
               ))}
             </div>
@@ -59,11 +59,11 @@ const EllasMentorySection = () => {
             <div className="flex gap-6 mb-10">
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-gold" />
-                <span className="text-primary-foreground/80 font-body text-sm font-medium">15h de imersão</span>
+                <span className="text-foreground/70 font-body text-sm font-medium">15h de imersão</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="w-5 h-5 text-gold" />
-                <span className="text-primary-foreground/80 font-body text-sm font-medium">Encontros presenciais</span>
+                <span className="text-foreground/70 font-body text-sm font-medium">Encontros presenciais</span>
               </div>
             </div>
 
