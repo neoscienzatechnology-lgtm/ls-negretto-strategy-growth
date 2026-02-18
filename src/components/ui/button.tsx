@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -15,10 +15,11 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        gold: "bg-gold text-charcoal hover:bg-gold-light font-semibold tracking-wide shadow-lg hover:shadow-xl",
-        "gold-outline": "border-2 border-gold text-gold hover:bg-gold hover:text-charcoal font-semibold tracking-wide",
-        "hero-primary": "bg-gold text-charcoal hover:bg-gold-light font-semibold tracking-wide text-base shadow-lg hover:shadow-xl hover:-translate-y-0.5",
-        "hero-secondary": "border-2 border-foreground/30 text-foreground hover:bg-foreground/10 font-medium tracking-wide text-base",
+        gold: "bg-gold text-white hover:bg-gold-dark font-semibold tracking-wide shadow-gold hover:shadow-gold-lg hover:-translate-y-0.5",
+        "gold-outline": "border-2 border-gold text-gold hover:bg-gold hover:text-white font-semibold tracking-wide",
+        "hero-primary": "bg-gold text-white hover:bg-gold-dark font-semibold tracking-wide text-base shadow-gold-lg hover:shadow-gold hover:-translate-y-0.5",
+        "hero-secondary": "border-2 border-charcoal/30 text-charcoal hover:bg-charcoal/10 font-medium tracking-wide text-base",
+        "dark-primary": "bg-charcoal text-white hover:bg-charcoal/90 font-semibold tracking-wide shadow-lg hover:-translate-y-0.5",
       },
       size: {
         default: "h-10 px-4 py-2",
