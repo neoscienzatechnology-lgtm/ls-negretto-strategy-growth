@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
 import lucianeAbout from "@/assets/luciane-about.jpg";
 
+const stats = [
+  { value: "+30", label: "anos de mercado" },
+  { value: "100s", label: "negócios apoiados" },
+  { value: "15", label: "anos como docente" },
+];
+
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-24 lg:py-32 bg-card">
+    <section id="sobre" className="py-20 lg:py-28 bg-gradient-cream-section">
       <div className="container mx-auto px-6 lg:px-16">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -15,13 +21,19 @@ const AboutSection = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="absolute -inset-3 bg-gold/10 rounded-2xl blur-xl" />
+              <div className="absolute -inset-4 rounded-3xl"
+                style={{ background: "linear-gradient(135deg, hsl(38 55% 70% / 0.3), transparent)" }} />
               <img
                 src={lucianeAbout}
-                alt="Luciane Segala Negretto - Fundadora da LS Negretto"
-                className="relative rounded-2xl w-full max-w-md object-cover shadow-xl"
+                alt="Luciane Segala Negretto – Mentora da Elas Mentoring"
+                className="relative rounded-3xl w-full max-w-sm object-cover shadow-xl"
                 loading="lazy"
               />
+              {/* Credential badge */}
+              <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl p-4 shadow-gold border border-border">
+                <p className="font-body text-xs text-foreground/50 uppercase tracking-wider">Especialista em</p>
+                <p className="font-heading text-sm text-foreground mt-0.5">Gestão · Franchising · Neurogestão</p>
+              </div>
             </div>
           </motion.div>
 
@@ -32,41 +44,43 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="gold-line mb-6" />
-            <span className="text-gold font-body text-sm tracking-[0.25em] uppercase font-medium">
-              Sobre a fundadora
+            <div className="gold-line mb-5" />
+            <span className="text-gold font-body text-xs tracking-[0.3em] uppercase font-semibold">
+              Sobre a mentora
             </span>
 
             <h2 className="text-3xl md:text-4xl font-heading text-foreground leading-tight mt-4 mb-6">
-              Luciane Segala{" "}
-              <span className="italic text-gold">Negretto</span>
+              Sou a Lu{" "}
+              <span className="text-gradient-gold italic">— e essa é minha história.</span>
             </h2>
 
-            <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
+            <div className="space-y-4 font-body text-foreground/60 leading-relaxed text-base">
               <p>
-                Com mais de <strong className="text-foreground">23 anos de experiência</strong> em gestão de negócios e franquias, Luciane é especialista em gestão, franchising e neurogestão.
+                Casada, mãe da Duda, 47 anos. Tenho{" "}
+                <strong className="text-foreground font-semibold">mais de 30 anos no mercado</strong>{" "}
+                e uma trajetória que mistura academia, banco, franquia e consultoria.
               </p>
               <p>
-                Sua trajetória inclui atuação como franqueada, gestora, diretora de treinamento, consultora empresarial e professora universitária por 15 anos.
+                Fui professora universitária por 15 anos, trabalhei no Banco do Brasil, empreendi por 10 anos no universo de franquias e depois passei a{" "}
+                <strong className="text-foreground font-semibold">apoiar centenas de unidades e negócios no Brasil</strong>.
               </p>
               <p>
-                Fundadora da <strong className="text-foreground">LS Negretto</strong> e do <strong className="text-foreground">Ellas Business</strong> — clube de negócios que reúne mais de 250 empresárias ativas — Luciane une prática, estratégia e sensibilidade humana em cada projeto.
+                Fundei a <strong className="text-foreground font-semibold">LS Negretto</strong> e o{" "}
+                <strong className="text-foreground font-semibold">Ellas Business</strong> para levar método, clareza e presença humana a cada empreendedora que atendo.
+              </p>
+              <p>
+                Minha atuação é prática, estratégica e próxima — sem discurso motivacional vazio, com resultado real.
               </p>
             </div>
 
-            <div className="mt-8 flex gap-8">
-              <div>
-                <span className="text-2xl font-heading text-gold font-bold">23+</span>
-                <p className="text-muted-foreground text-sm font-body">anos de experiência</p>
-              </div>
-              <div>
-                <span className="text-2xl font-heading text-gold font-bold">250+</span>
-                <p className="text-muted-foreground text-sm font-body">empresárias no Ellas</p>
-              </div>
-              <div>
-                <span className="text-2xl font-heading text-gold font-bold">15</span>
-                <p className="text-muted-foreground text-sm font-body">anos como docente</p>
-              </div>
+            {/* Stats */}
+            <div className="flex gap-8 mt-8 pt-8 border-t border-border">
+              {stats.map((s, i) => (
+                <div key={i}>
+                  <span className="text-2xl font-heading text-gold font-bold">{s.value}</span>
+                  <p className="text-foreground/50 text-sm font-body mt-0.5">{s.label}</p>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>
